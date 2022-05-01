@@ -30,7 +30,7 @@ public class CadastroDeProduto {
 
 	private static void cadastrarProduto() {
 		Categoria celulares = new Categoria("CELULARES");
-		Produto celular = new Produto("Xiaomi Redmi", "Muito legal", new BigDecimal("800"), celulares );
+		Produto celular = new Produto("Xiaomi Redmi", "Muito legal", 800.00 , celulares );
 		
 		EntityManager em = JPAUtil.getEntityManager();
 		ProdutoDao produtoDao = new ProdutoDao(em);
